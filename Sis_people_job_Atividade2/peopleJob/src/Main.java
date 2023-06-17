@@ -7,7 +7,9 @@ import models.person.Person;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -38,8 +40,13 @@ public class Main {
                 BigDecimal.valueOf(10)
         );
 
-
-        System.out.println(candidate.getPerson().getName());
+        new FileOutput().toFile(
+                "C:\\mjv\\MJV_Java_School\\Sis_people_job_Atividade2\\arquivo.csv",
+                new ArrayList<>() {{
+                    add(candidate);
+                }},
+                new StringBuilder()
+        );
 
     }
 

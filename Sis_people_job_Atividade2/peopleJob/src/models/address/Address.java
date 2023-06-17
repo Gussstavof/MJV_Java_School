@@ -6,7 +6,7 @@ public class Address {
     private String complement;
     private String neighbourhood;
     private String city;
-    private String State;
+    private String state;
 
     public Address(String street, String number, String complement, String neighbourhood, String city, String state) {
         this.street = street;
@@ -14,7 +14,7 @@ public class Address {
         this.complement = complement;
         this.neighbourhood = neighbourhood;
         this.city = city;
-        State = state;
+        this.state = state;
     }
 
     public String getStreet() {
@@ -38,6 +38,6 @@ public class Address {
     }
 
     public String getState() {
-        return State;
+        return state;
     }
 }
